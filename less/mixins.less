@@ -23,6 +23,7 @@
     &:hover {
         background: @porcelain;
         color: @btn-bg-color;
+        .spinny(360deg, 3s);
     }
 }
 
@@ -33,4 +34,9 @@
 
 .mobile-pad () {
     padding: 0 15px;
+}
+
+.spinny (@deg, @time) {
+    transform: rotate(@deg);
+    transition: transform @time;
 }

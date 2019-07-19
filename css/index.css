@@ -336,6 +336,8 @@ footer {
 .home .walk .walk-text .btn button:hover {
   background: #F6F7F8;
   color: #22283A;
+  transform: rotate(360deg);
+  transition: transform 3s;
 }
 .home .walk .walk-img {
   width: 46%;
