@@ -1,1 +1,25 @@
 // Navigation code here
+.navbar {
+    .flex-align(column, center);
+    width: 100%;
+    align-self: center;
+    background: @footer-background;
+    
+
+    h1 {
+        font-size: 3.5rem;
+
+    }
+
+    nav {
+        .flex-just(row, space-between);
+        width: 20%;
+        margin: 10px;
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @header-font-color;
+        }
+
+    }
+}
