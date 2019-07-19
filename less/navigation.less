@@ -1,5 +1,8 @@
 // Navigation code here
 .navbar {
+    @media @mobile {
+        width: 100%;
+    }
     .flex-align(column, center);
     width: 100%;
     align-self: center;
@@ -12,7 +15,10 @@
     }
 
     nav {
-        .flex-just(row, space-between);
+        @media @mobile {
+            width: 100%;
+        }
+        .flex-just(row, space-evenly);
         width: 20%;
         margin: 10px;
         a {
